@@ -1,0 +1,38 @@
+POST http://localhost:3000/api/equipos/primeraDivicion HTTP/1.1
+Content-Type: application/json
+
+{
+      "id":36,
+      "equipo":"quilmes",
+      "localidad":"quilmes",
+      "hinchas":556562,
+      "apodo":"el Cervesero",
+      "nivel":"discontinuo"
+}
+
+###
+
+PUT  http://localhost:3000/api/equipos/primeraDivicion/2 HTTP/1.1
+Content-Type: application/json
+
+    {   "id":2,
+        "equipo":"River-Plate",
+        "localidad":"Nuñez",
+        "hinchas":14664641,
+        "apodo":"El Millonario",
+        "nivel":"Profesional"  }
+
+
+###
+PATCH http://localhost:3000/api/equipos/primeraDivicion/2 HTTP/1.1
+Content-Type: application/json
+
+
+{
+ "localidad": "Nuñez",
+ "hinchas": 11115144
+ 
+}
+
+###
+DELETE http://localhost:3000/api/equipos/primeraDivicion/1 HTTP/1.1
